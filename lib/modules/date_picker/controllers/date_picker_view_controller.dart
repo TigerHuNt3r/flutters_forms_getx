@@ -10,8 +10,8 @@ class DatePickerViewController extends GetxController {
     DateTime? pickedDate = await showDatePicker(
       context: context,
       initialDate: birthDate,
-      firstDate: DateTime(-5000000),
-      lastDate: DateTime(5000000),
+      firstDate: DateTime(0),
+      lastDate: DateTime(2050),
       initialDatePickerMode: DatePickerMode.year);
       if (pickedDate != null) {
         birthDate = pickedDate;

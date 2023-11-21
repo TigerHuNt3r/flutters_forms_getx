@@ -12,7 +12,7 @@ class DatePickerView extends StatelessWidget {
         builder: (_) {
           return Scaffold(
             appBar: AppBar(
-              title: Text(controller.birthDate.toString().split('')[0]),
+              title: Text(controller.birthDate.toString().split(' ')[0]),
             ),
             body: Center(
               child: CupertinoButton(
